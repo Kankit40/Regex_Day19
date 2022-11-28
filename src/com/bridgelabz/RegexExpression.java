@@ -4,6 +4,7 @@ import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
 public class RegexExpression {
+    //Rules of validation
     public static boolean checkValidName(String firstName) {
         String firstNameRegex= "^[A-Z]{1}[A-Za-z]{2,}$";
         Pattern obj= Pattern.compile(firstNameRegex);
