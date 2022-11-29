@@ -23,7 +23,7 @@ public class RegexExpression {
         boolean b2 = Pattern.compile("^[A-Z]{1}[A-Za-z]{2,}$").matcher(str2).matches();
         boolean b3 = Pattern.compile("^[A-Za-z0-9]+[@][a-zA-Z]+[.][a-zA-Z]+[.]?[a-zA-Z]{2}$").matcher(str3).matches();
         boolean b4 = Pattern.compile("^(91)[-.+]{1}[1-9]{1}[0-9]{9}$").matcher(str4).matches();
-        boolean b5 = Pattern.compile("^[0-9]{1}[A-z]{1}[a-zA-Z0-9]{6,}$").matcher(str5).matches();
+        boolean b5 = Pattern.compile("^[0-9]{1,}[!@#$%^&]{1,}[A-z]{1,}[a-zA-Z0-9]{5,}$").matcher(str5).matches();
 
         //Checking First name
         if (b1 == true){
